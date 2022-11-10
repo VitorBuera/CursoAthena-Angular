@@ -1,0 +1,22 @@
+<div align="center">
+  <mat-card-content class="container">
+<mat-card class="card-login">
+        <mat-card-title>Cadastro</mat-card-title>
+<form novalidate>
+<mat-card-content class="conteudo">
+  <mat-form-field appearance="fill">
+    <mat-label>Nome</mat-label>
+    <input type="text" matInput [(ngModel)]="nome" [ngModelOptions]="{standalone: true}" placeholder="teste@email.com">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Senha</mat-label>
+    <input type="password" [(ngModel)]="senha" [ngModelOptions]="{standalone: true}" matInput>
+  </mat-form-field>
+</mat-card-content>
+</form>
+    <mat-card-actions align="end">
+        <button mat-raised-button color="accent" class="full" align="end" (click)="cadastrar()">Cadastrar</button>
+    </mat-card-actions>
+</mat-card>
+</mat-card-content>
+</div>

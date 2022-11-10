@@ -1,0 +1,23 @@
+<div align="center" class="div-login">
+  <mat-card-content class="container">
+<mat-card class="card-login">
+        <mat-card-title>Login</mat-card-title>
+<form action="">
+<mat-card-content class="conteudo-login">
+  <mat-form-field appearance="fill">
+    <mat-label>Nome</mat-label>
+    <input type="text" matInput [(ngModel)]="nome" [ngModelOptions]="{standalone: true}" placeholder="teste@email.com">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Senha</mat-label>
+    <input type="password" matInput [(ngModel)]="senha" [ngModelOptions]="{standalone: true}">
+  </mat-form-field>
+</mat-card-content>
+</form>
+    <mat-card-actions align="end">
+        <button mat-raised-button color="primary" class="full" align="end" (click)="login()">Login</button>
+        <button mat-raised-button color="accent" class="full" align="end" (click)="cadastrar()">Cadastrar</button>
+    </mat-card-actions>
+</mat-card>
+</mat-card-content>
+</div>

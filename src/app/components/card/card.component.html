@@ -1,0 +1,12 @@
+<div class="card cardHome">
+  <div class="card-header">
+    <h1>{{peixe["Species Name"]}}</h1>
+  </div>
+  <div class="divImg">
+    <img class="img-fluid img" [style]="'height: 8rem;background-color:' + peixe['Quote Background Color'] + '50'" [src]="peixe['Species Illustration Photo']?.src" alt="Card image cap">
+  </div>
+  <div class="card-body">
+    <p [innerHTML]="peixe['Physical Description']" class="paragrafo"></p>
+    <button class="btn btn-lg btn-primary" (click)="detalhes()">More info</button>
+  </div>
+</div>
